@@ -1,0 +1,14 @@
+ .user{
+    height: 30vh;
+    padding-top: 5px;
+    background-color: #f1f6f9;    
+  }
+
+ .user .userInfo {
+    height: 100%;
+    color: black;
+    align-items: center;
+    justify-content: center;
+  }
+
+
