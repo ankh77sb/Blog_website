@@ -3,7 +3,7 @@ import { Link , NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-      <nav>
+      <nav style={{backgroundColor:"#394867"}}>
          <div>
         
          <p>IITI BLOG</p>

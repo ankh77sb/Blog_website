@@ -1,7 +1,6 @@
 import React , {Component} from 'react';
-//import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import avatar from '../images/avatar.jpg';
-import { Container, Avatar, Grid } from '@material-ui/core';
 import './dashboard.css';
 import scene from '../images/scene.jpg';
 import like from '../images/like.png';
@@ -13,32 +12,88 @@ import jason from '../images/jason kilar.jpg';
 import kamla from '../images/kamla.jpg';
 import leadership from '../images/leadership.jpg';
 
+
 class Dashboard extends Component{
     render(){
         return(
               <div className="Dashboard">
-                  <Container maxWidth="lg">
-                  <Grid container direction="row" justify="center" alignItems="center" display="inline"  className="user">
-                        <Grid item lg={3} xs={12} sm={12} md={3} justify="center" alignItems="center" spacing={0} className="MuiGrid-align-items-lg-center,MuiGrid-align-items-xs-center">
-                        <Avatar  alt="not found" src={avatar} style={{ height: 'auto', width: '150px', margin:'10%'}}/>
-                        </Grid>
-                        <Grid item lg={7}  xs={12} sm={12} md={7} justify="center" alignItems="center" spacing={0} className="MuiGrid-align-items-lg-center,MuiGrid-align-items-xs-center" >
-                         <div>
-                             <h1>ELON MUSK</h1>
-                             <Grid container direction="row" justify="center" alignItems="center" display="inline">
-                             <Grid item lg={6} md={6} sm={6} xs={6} justify="center" alignItems="center" spacing={0} >
-                              <h3>FOLLOWERS</h3>
-                              <h2>1892</h2>
-                             </Grid>
-                             <Grid item lg={6} md={6} sm={6} xs={6} justify="center" alignItems="center" spacing={0} >
-                             <h3>FOLLOWING</h3>
-                             <h2>29190</h2>
-                             </Grid>
-                             </Grid>
+                  <div className="userDiv d-flex align-items-center  ">
+                  <Container className="user" fluid={true}>
+                  <Row>
+                        <Col md="3" lg="4" xl="4" sm="12" xs="12">
+                        <img  rounded alt="not found" src={avatar} className="d-block mx-auto  img-fluid rounded-circle shadow w-50"/>
+                        </Col>
+                        <Col md="7" lg="6" xl="6" sm="12" xs="12">
+                         <div className="py-2">
+                         <Container className="text-center" fluid={true}>
+                             <Row className="userInfo">
+                                   <Col xs="12">
+                                        <h2>ELON MUSK</h2>
+                                   </Col>
+                             </Row>
+                             <Row className="userInfo">
+                                   <Col xs="6">
+                                        <h5>FOLLOWERS</h5>
+                                   </Col>
+                                   <Col xs="6">
+                                        <h5>FOLLOWING</h5>
+                                   </Col>
+                             </Row>
+                             <Row className="userInfo">
+                                   <Col xs="6">
+                                        <h4>1892</h4>
+                                   </Col>
+                                   <Col xs="6">
+                                        <h4>29190</h4>
+                                   </Col>
+                             </Row> 
+                             <Row>
+                                 <Col xs="6">Blogs</Col>
+                                 <Col xs="6">29928</Col>
+                             </Row>  
+                        </Container>
                          </div> 
-                        </Grid>
-                  </Grid>
+                         </Col>
+                         <Col xl="2" lg="2" md="2" xs="12" sm="12" className="py-4">
+                         <Button  outline color="secondary" size="md" block><span class="material-icons">edit</span> Edit Profile</Button>
+                         </Col>
+                   </Row>
                   </Container>
+                  </div>
+
+                  <Container fluid={true}>
+                  <Row>
+                  <Col lg="4" xl="4">
+                    <div className="mt-5 mx-3 shadow" style={{ backgroundColor:"#394867",color:"#f1f6f9"}}>
+                       <Container className="py-3">
+                       <Row>
+                            <Col lg="12"><p><b>About</b></p></Col>
+                            <Col lg="12"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></Col>
+                        </Row>
+                        <Row>
+                            <Col xs="1"><span class="material-icons">person_outline</span></Col>
+                            <Col xs="11"><p>Student</p></Col>
+                        </Row>
+                        <Row>
+                            <Col xs="1"><span class="material-icons">alternate_email</span></Col>
+                            <Col xs="11"><p>xyz@gmail.com</p></Col>
+                        </Row>
+                        <Row>
+                            <Col xs="1"><span class="material-icons">call</span></Col>
+                            <Col xs="11"><p>+91-9898989898</p></Col>
+                        </Row>
+                        <hr style={{borderColor:"#9ba4b4"}}></hr>
+                        <Row>
+                            <Col>
+                                <h5>Topics Following</h5>
+                                <p>webdev,iot,ml,ai,blockchain,nuclear physics</p>
+                            </Col>
+                        </Row>
+                       </Container>
+                    </div>
+                  </Col>
+                  <Col lg="8" xl="8"  >
+                  <Container fluid={false}>
                   <div className="gallery">
                     <div style ={{borderBottom: "1px solid grey"}}>
                         <img className="item" src= {scene} />
@@ -207,7 +262,13 @@ class Dashboard extends Component{
                             </div>
                     </div>
                      </div>
+                     </Container>
+                  </Col>
+                 </Row>
+                 </Container>
+                     
                 </div>
+                
         );
     }
 }
