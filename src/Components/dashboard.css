@@ -1,16 +1,17 @@
- .userDiv .user{
-    
+ .userDiv
+ {
+   background-color:#394867;
+   color:#f1f6f9;
+ }
+ .userDiv .user{ 
     padding-top: 5px;
-    background-color: #f1f6f9;    
+      
   }
 
-  .userDiv .user .userInfo {
-    min-height: 8vh;
-    color: black;
-
-  }
-  .userDiv{
-  height: fit-content;
+ .userDiv .user .userInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 
@@ -49,7 +50,6 @@
   @media screen and (min-width:320px) and (max-width:374px)
   {
      .userDiv {
-      background-color: #f1f6f9;
       height: 100vh;
      }
 
@@ -63,15 +63,9 @@
   @media screen and (min-width:375px) and (max-width:767px)
   {
      .userDiv {
-      background-color: #f1f6f9;
+  
       height: 100vh;
      }
-
-     .userDiv .user .userInfo {
-      min-height: 15vh;
-      color: black;
-  
-    }
   }
   
 

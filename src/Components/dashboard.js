@@ -17,56 +17,48 @@ class Dashboard extends Component{
     render(){
         return(
               <div className="Dashboard">
-                  <div className="userDiv d-flex align-items-center  ">
-                  <Container className="user" fluid={true}>
-                  <Row>
-                        <Col md="3" lg="4" xl="4" sm="12" xs="12">
-                        <img  rounded alt="not found" src={avatar} className="d-block mx-auto  img-fluid rounded-circle shadow w-50"/>
-                        </Col>
-                        <Col md="7" lg="6" xl="6" sm="12" xs="12">
-                         <div className="py-2">
-                         <Container className="text-center" fluid={true}>
-                             <Row className="userInfo">
-                                   <Col xs="12">
-                                        <h2>ELON MUSK</h2>
-                                   </Col>
-                             </Row>
-                             <Row className="userInfo">
-                                   <Col xs="6">
-                                        <h5>FOLLOWERS</h5>
-                                   </Col>
-                                   <Col xs="6">
-                                        <h5>FOLLOWING</h5>
-                                   </Col>
-                             </Row>
-                             <Row className="userInfo">
-                                   <Col xs="6">
-                                        <h4>1892</h4>
-                                   </Col>
-                                   <Col xs="6">
-                                        <h4>29190</h4>
-                                   </Col>
-                             </Row> 
-                             <Row>
-                                 <Col xs="6">Blogs</Col>
-                                 <Col xs="6">29928</Col>
-                             </Row>  
-                        </Container>
-                         </div> 
-                         </Col>
-                         <Col xl="2" lg="2" md="2" xs="12" sm="12" className="py-4">
-                         <Button  outline color="secondary" size="md" block><span class="material-icons">edit</span> Edit Profile</Button>
-                         </Col>
-                   </Row>
-                  </Container>
-                  </div>
 
                   <Container fluid={true}>
                   <Row>
                   <Col lg="4" xl="4">
-                    <div className="mt-5 mx-3 shadow" style={{ backgroundColor:"#394867",color:"#f1f6f9"}}>
-                       <Container className="py-3">
-                       <Row>
+                    <div className="mt-3 mx-3 shadow userDiv">
+                       <Container className="user py-3 text-align">
+                       <Row className="text-center">
+                            <Col md="12" lg="12" xl="12" sm="12" xs="12" cl>
+                                <img  rounded alt="not found" src={avatar} className="d-block mx-auto  img-fluid rounded-circle shadow w-50" />
+                            </Col>
+                        </Row>
+                        <Row className="userInfo text-capitalize">
+                                   <Col xs="12">
+                                        <h2>elon musk</h2>
+                                   </Col>
+                        </Row>
+                        <Row className="userInfo text-capitalize">
+                                   <Col xs="6">
+                                        <h6><span class="material-icons">whatshot</span> Followers</h6>
+                                   </Col>
+                                   <Col xs="6">
+                                        <h6>1892</h6>
+                                   </Col>
+                        </Row>
+                        <Row className="userInfo text-capitalize">
+                                   <Col xs="6">
+                                        <h6><span class="material-icons">person_pin</span> Following</h6>
+                                   </Col>
+                                   <Col xs="6">
+                                        <h6>29190</h6>
+                                   </Col>
+                        </Row>
+                        <Row className="text-capitalize">
+                                 <Col xs="6"><h6 style={{display:"inline"}}><span class="material-icons">history_edu</span> Blogs</h6></Col>
+                                 <Col xs="6"><h6>29928</h6></Col>
+                        </Row> 
+                        <Row>
+                                 <Col className="py-4 text-center">
+                                    <Button  outline color="secondary" size="md" block><span class="material-icons">edit</span> Edit Profile</Button>
+                                 </Col>
+                        </Row>  
+                        <Row>
                             <Col lg="12"><p><b>About</b></p></Col>
                             <Col lg="12"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></Col>
                         </Row>
