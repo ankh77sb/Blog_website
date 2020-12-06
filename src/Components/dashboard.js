@@ -4,14 +4,13 @@ import avatar from '../images/avatar.jpg';
 import './dashboard.css';
 import scene from '../images/scene.jpg';
 import like from '../images/like.png';
-import response from '../images/response.png';
 import save from '../images/save.png';
 import second from '../images/2nd.jpg';
 import food from '../images/food.jpg';
 import jason from '../images/jason kilar.jpg';
 import kamla from '../images/kamla.jpg';
 import leadership from '../images/leadership.jpg';
-
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 class Dashboard extends Component{
     render(){
@@ -84,7 +83,7 @@ class Dashboard extends Component{
                        </Container>
                     </div>
                   </Col>
-                  <Col lg="8" xl="8"  >
+                  <Col lg="8" xl="8">
                   <Container fluid={false}>
                   <div className="gallery">
                     <div style ={{borderBottom: "1px solid grey"}}>
@@ -108,9 +107,9 @@ class Dashboard extends Component{
                                 <h7>Read more : 3 min read</h7>
                             </div>
                             <div style= {{display: "flex",  marginRight: "15%"}}>
-                                <img className = "icons-like" src= {like}/>
+                            <span class="material-icons" >favorite_border</span>
                                 <h5>289</h5>
-                                <img className = "bookmark" src= {save}/>
+                                <span class="material-icons" style={{marginLeft: "80%"}}>turned_in_not</span>
                             </div>
                     </div>
                     <div style ={{borderBottom: "1px solid grey"}}>
@@ -136,9 +135,9 @@ class Dashboard extends Component{
                                 <h7>Read more : 3 min read</h7>
                             </div>
                             <div style= {{display: "flex",  marginRight: "15%"}}>
-                                <img className = "icons-like" src= {like}/>
+                            <span class="material-icons" >favorite_border</span>
                                 <h5>289</h5>
-                                <img className = "bookmark" src= {save}/>
+                                <span class="material-icons" style={{marginLeft: "80%"}}>turned_in_not</span>
                             </div>
                     </div>
                     <div style ={{borderBottom: "1px solid grey"}}>
@@ -166,9 +165,9 @@ class Dashboard extends Component{
                                 <h7>Read more : 3 min read</h7>
                             </div>
                             <div style= {{display: "flex",  marginRight: "15%"}}>
-                                <img className = "icons-like" src= {like}/>
+                            <span class="material-icons" >favorite_border</span>
                                 <h5>289</h5>
-                                <img className = "bookmark" src= {save}/>
+                                <span class="material-icons" style={{marginLeft: "80%"}}>turned_in_not</span>
                             </div>
                     </div>
                     <div style ={{borderBottom: "1px solid grey"}}>
@@ -194,9 +193,9 @@ class Dashboard extends Component{
                                 <h7>Read more : 3 min read</h7>
                             </div>
                             <div style= {{display: "flex",  marginRight: "15%"}}>
-                                <img className = "icons-like" src= {like}/>
+                            <span class="material-icons" >favorite_border</span>
                                 <h5>289</h5>
-                                <img className = "bookmark" src= {save}/>
+                                <span class="material-icons" style={{marginLeft: "80%"}}>turned_in_not</span>
                             </div>
                     </div>
                     <div style ={{borderBottom: "1px solid grey"}}>
@@ -222,9 +221,9 @@ class Dashboard extends Component{
                                 <h7>Read more : 3 min read</h7>
                             </div>
                             <div style= {{display: "flex",  marginRight: "15%"}}>
-                                <img className = "icons-like" src= {like}/>
+                            <span class="material-icons" >favorite_border</span>
                                 <h5>289</h5>
-                                <img className = "bookmark" src= {save}/>
+                                <span class="material-icons" style={{marginLeft: "80%"}}>turned_in_not</span>
                             </div>
                     </div>
                     <div style ={{borderBottom: "1px solid grey"}}>
@@ -248,9 +247,9 @@ class Dashboard extends Component{
                                 <h7>Read more : 3 min read</h7>
                             </div>
                             <div style= {{display: "flex",  marginRight: "15%"}}>
-                                <img className = "icons-like" src= {like}/>
+                            <span class="material-icons" >favorite_border</span>
                                 <h5>289</h5>
-                                <img className = "bookmark" src= {save}/>
+                                <span class="material-icons" style={{marginLeft: "80%"}}>turned_in_not</span>
                             </div>
                     </div>
                      </div>
