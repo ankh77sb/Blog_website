@@ -50,13 +50,13 @@ class Dashboard extends Component{
                                  <Col xs="6"><h6>29928</h6></Col>
                         </Row> 
                         <Row>
-                                 <Col className="py-4 text-center">
-                                    <Button outline color="secondary" size="md" block><Link to = "/editprofile"><span class="material-icons">edit</span> Edit Profile</Link></Button>
+                                 <Col className="py-3 text-center">
+                                 <Link to = "/editprofile"><Button outline color="secondary" size="md" block><span class="material-icons">edit</span> Edit Profile</Button></Link>
                                  </Col>
                         </Row>  
                         <Row>
-                                 <Col className="py-4 text-center">
-                                    <Button outline color="secondary" size="md" block><Link to = "/bookmark"><span class="material-icons">bookmark</span>Bookmarked Blogs</Link></Button>
+                                 <Col className=" pt-1 pb-3 text-center">
+                                 <Link to = "/bookmark"><Button outline color="secondary" size="md" block><span class="material-icons">bookmark</span>Bookmarked Blogs</Button></Link>
                                  </Col>
                         </Row>  
                         <Row>
@@ -66,16 +66,13 @@ class Dashboard extends Component{
                                 scrambled it to make a type specimen book.</p></Col>
                         </Row>
                         <Row>
-                            <Col xs="1"><span class="material-icons">person_outline</span></Col>
-                            <Col xs="11"><p>Student</p></Col>
+                            <Col><p><span class="material-icons">person_outline</span> Student</p></Col>
                         </Row>
                         <Row>
-                            <Col xs="1"><span class="material-icons">alternate_email</span></Col>
-                            <Col xs="11"><p>xyz@gmail.com</p></Col>
+                            <Col><p><span class="material-icons">alternate_email</span> xyz@gmail.com</p></Col>
                         </Row>
                         <Row>
-                            <Col xs="1"><span class="material-icons">call</span></Col>
-                            <Col xs="11"><p>+91-9898989898</p></Col>
+                            <Col><p><span class="material-icons">call</span> +91-9898989898</p></Col>
                         </Row>
                         <hr style={{borderColor:"#9ba4b4"}}></hr>
                         <Row>
@@ -88,7 +85,7 @@ class Dashboard extends Component{
                     </div>
                   </Col>
                   <Col lg="8" xl="8">
-                  <Container fluid={false}>
+                  <Container fluid={false} className="mb-5">
                   <div className="gallery">
                     <div style ={{borderBottom: "1px solid grey"}}>
                         <div style = {{display: "flex"}}>

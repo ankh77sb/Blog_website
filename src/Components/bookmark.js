@@ -14,15 +14,23 @@ class Bookmark extends Component{
     render(){
         return(
               <div className="Dashboard" style={{marginLeft:"15%"}}>
-                  <Row>
-                      <div style={{marginLeft:"10%"}}> 
-                      <h2><u>Your Bookmarked Blogs</u></h2>
-                      </div>
-                      <div>
-                      <Button variant="contained" color="primary" href="/dashboard" style={{marginLeft:"300%"}}><div>Back to dashboard</div></Button>
-                      </div>
-                  <Col lg="8" xl="8">
                   <Container fluid={false}>
+                    <Row>
+                      <Col xs="7">
+                      <div> 
+                      <h2><b>BOOKMARKS</b></h2>
+                      </div>
+                      </Col>
+                      <Col xs="5">
+                      <div>
+                      <Button variant="contained" color="primary" href="/dashboard" ><div>Back to dashboard</div></Button>
+                      </div>
+                      </Col>
+                    </Row>
+                  </Container>
+                  <Container fluid={false} className="mb-5">
+                  <Row>
+                  <Col lg="9" xl="9">
                   <div className="gallery">
                     <div style ={{borderBottom: "1px solid grey"}}>
                         <div style = {{display: "flex"}}>
@@ -174,9 +182,9 @@ class Bookmark extends Component{
                             </div>
                     </div>
                      </div>
+                     </Col>
+                     </Row>
                      </Container>
-                  </Col>
-                </Row>
                  
                      
                 </div>

@@ -5,11 +5,6 @@ import './dashboard.css';
 import { Link } from "react-router-dom"; 
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import Info from '@material-ui/icons/Info';
-import Email from '@material-ui/icons/Email';
-import Phone from '@material-ui/icons/Phone';
-import Notes from '@material-ui/icons/Notes';
 import bg from '../images/bg.webp';
 
 
@@ -34,10 +29,10 @@ class  Editprofile extends Component{
                             </Col>
                 <div style={{marginTop:"5%",marginLeft:"15%"}}>
                     
-                    <form>
+                    <form className="text-center">
                         <input type='file' className='Choose Image '/>
                         <div style={{marginTop:"10%"}}>
-                    <button className='btn btn-outline-dark slantfont'>Upload</button>
+                    <button className='btn btn-outline-dark slantfont mb-5' >Upload</button>
                     </div>
                         </form>
                 </div>
@@ -48,7 +43,7 @@ class  Editprofile extends Component{
                         <div style={{display:"flex",justifyContent:"space-around"}}> 
                             <Grid container spacing={1}  style={{marginTop:"25%",marginRight:"10%"}}>
                             <Grid item>
-                                < Info/>
+                            <span class="material-icons">info</span>
                             </Grid>
                             <Grid item>
                                 <TextField id="input-with-icon-grid" label="About" style={{width:"150%"}}/>
@@ -56,7 +51,7 @@ class  Editprofile extends Component{
                             </Grid>
                             <Grid container spacing={1}  style={{marginTop:"25%",marginRight:"10%",marginLeft:"10%"}}>
                             <Grid item>
-                                <AccountCircle />
+                            <span class="material-icons">account_circle</span>
                             </Grid>
                             <Grid item>
                                 <TextField id="input-with-icon-grid" label="Profession" style={{width:"150%"}} />
@@ -66,25 +61,15 @@ class  Editprofile extends Component{
                         <div style={{display:"flex",justifyContent:"space-around"}}> 
                             <Grid container spacing={1}  style={{marginTop:"5%",marginRight:"10%"}}>
                             <Grid item>
-                                <Email />
-                            </Grid>
-                            <Grid item>
-                                <TextField id="input-with-icon-grid" label="E-mail" style={{width:"150%"}}/>
-                            </Grid>
-                            </Grid>
-                            <Grid container spacing={1}  style={{marginTop:"5%",marginRight:"10%",marginLeft:"10%"}}>
-                            <Grid item>
-                                <Phone />
+                            <span class="material-icons">phone</span>
                             </Grid>
                             <Grid item>
                                 <TextField id="input-with-icon-grid" label="Phone" style={{width:"150%"}} />
                             </Grid>
                             </Grid>
-                        </div>
-                        <div style={{display:"flex",justifyContent:"space-around"}}> 
-                            <Grid container spacing={1}  style={{marginTop:"5%",marginRight:"10%"}}>
+                            <Grid container spacing={1}  style={{marginTop:"5%",marginRight:"10%",marginLeft:"10%"}}>
                             <Grid item>
-                                <Notes />
+                            <span class="material-icons">notes</span>
                             </Grid>
                             <Grid item>
                                 <TextField id="input-with-icon-grid" label="Topics following" style={{width:"150%"}}/>
