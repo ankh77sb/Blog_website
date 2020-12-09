@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Form,FormGroup,Input,ListGroupItem,ListGroup,Button} from 'reactstrap';
 import { ThumbUp, ThumbUpOutlined} from '@material-ui/icons';
 import {IconButton} from '@material-ui/core'
-import '../App.css';
+import './Blogpage.css';
 
 
 const convertToString = (date) => {
