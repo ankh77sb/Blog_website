@@ -1,5 +1,5 @@
 import React , {Component} from 'react';
-import './Blogpage.css';
+import './blogpage.css';
 import Author from './Author';
 import Blog from './Blog';
 import Comments from './Comments';

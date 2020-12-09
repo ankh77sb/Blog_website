@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Input,Form,FormGroup, Button, ListGroup} from 'reactstrap';
 import Comment from './Comment';
-import './Blogpage.css';
+import './blogpage.css';
 
 
 class Comments extends Component{

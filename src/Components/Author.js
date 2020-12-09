@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Blogpage.css';
+import './blogpage.css';
 import { CommentOutlined,Facebook, ShareOutlined,ThumbUp, ThumbUpOutlined,TurnedIn,TurnedInNot} from '@material-ui/icons';
 import {Button,UncontrolledDropdown,DropdownToggle,DropdownItem, DropdownMenu} from 'reactstrap';
 import {IconButton} from '@material-ui/core';

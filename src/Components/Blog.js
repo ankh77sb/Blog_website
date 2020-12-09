@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-import './Blogpage.css';
+import './blogpage.css';
 import {useMediaQuery} from 'react-responsive';
 import Author from './Author';
 import {IconButton} from '@material-ui/core';
