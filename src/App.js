@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Dashboard from './Components/dashboard';
 import Editprofile from './Components/editprofile';
 import Bookmark from './Components/bookmark';
+import Blogdisplay from './Components/Blogpage'
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
             <Route path ='/dashboard' component={Dashboard}/> 
             <Route path='/editprofile' component={Editprofile}/>
             <Route path='/bookmark' component={Bookmark}/>
+            <Route path='/blogdisplay' component={Blogdisplay} />
     </div>
     </BrowserRouter>
     );
